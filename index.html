@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/corazón.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+    <title>NATALIA</title>
+</head>
+
+<body class="locked container">
+  <div id="pin-screen">
+
+    <div class="pin-box">
+
+      <h2 class="pin-title">
+      Felices <span class="mes-num">6</span> Meses 💗
+      </h2>
+
+    <div id="pin-error">Código incorrecto</div>
+
+      <div id="pin-display">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="pin-pad">
+
+        <button onclick="addNum(1)">1</button>
+        <button onclick="addNum(2)">2</button>
+        <button onclick="addNum(3)">3</button>
+
+        <button onclick="addNum(4)">4</button>
+        <button onclick="addNum(5)">5</button>
+        <button onclick="addNum(6)">6</button>
+
+        <button onclick="addNum(7)">7</button>
+        <button onclick="addNum(8)">8</button>
+        <button onclick="addNum(9)">9</button>
+
+        <button onclick="clearPin()">⌫</button>
+        <button onclick="addNum(0)">0</button>
+        <button onclick="clearAll()">C</button>
+
+      </div>
+
+    </div>
+    <div id="pagina" style="display:none;"></div>
+  </div>
+</div>
+    <div class="night"></div>
+    <div class="hearts">
+      <div class="heart heart1" onclick="openBox('carta')"></div>
+      <div class="heart heart2" onclick="openBox('spotify')"></div>
+      <div class="heart heart3" onclick="openBox('fotos')"></div>
+      <div class="heart heart4" onclick="openBox('tiempo')"></div>
+    </div>
+    <div class="flowers">
+      <div class="flower flower--1">
+        <div class="flower__leafs flower__leafs--1">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+  
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+  
+        </div>
+        <div class="flower__line">
+          <div class="flower__line__leaf flower__line__leaf--1"></div>
+          <div class="flower__line__leaf flower__line__leaf--2"></div>
+          <div class="flower__line__leaf flower__line__leaf--3"></div>
+          <div class="flower__line__leaf flower__line__leaf--4"></div>
+          <div class="flower__line__leaf flower__line__leaf--5"></div>
+          <div class="flower__line__leaf flower__line__leaf--6"></div>
+        </div>
+      </div>
+  
+      <div class="flower flower--2">
+        <div class="flower__leafs flower__leafs--2">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+  
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+  
+        </div>
+        <div class="flower__line">
+          <div class="flower__line__leaf flower__line__leaf--1"></div>
+          <div class="flower__line__leaf flower__line__leaf--2"></div>
+          <div class="flower__line__leaf flower__line__leaf--3"></div>
+          <div class="flower__line__leaf flower__line__leaf--4"></div>
+        </div>
+      </div>
+  
+      <div class="flower flower--3">
+        <div class="flower__leafs flower__leafs--3">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+  
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+  
+        </div>
+        <div class="flower__line">
+          <div class="flower__line__leaf flower__line__leaf--1"></div>
+          <div class="flower__line__leaf flower__line__leaf--2"></div>
+          <div class="flower__line__leaf flower__line__leaf--3"></div>
+          <div class="flower__line__leaf flower__line__leaf--4"></div>
+        </div>
+      </div>
+  
+      <div class="grow-ans" style="--d:1.2s">
+        <div class="flower__g-long">
+          <div class="flower__g-long__top"></div>
+          <div class="flower__g-long__bottom"></div>
+        </div>
+      </div>
+  
+      <div class="growing-grass">
+        <div class="flower__grass flower__grass--1">
+          <div class="flower__grass--top"></div>
+          <div class="flower__grass--bottom"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--1"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--2"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--3"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--4"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--5"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--6"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--7"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--8"></div>
+          <div class="flower__grass__overlay"></div>
+        </div>
+      </div>
+  
+      <div class="growing-grass">
+        <div class="flower__grass flower__grass--2">
+          <div class="flower__grass--top"></div>
+          <div class="flower__grass--bottom"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--1"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--2"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--3"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--4"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--5"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--6"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--7"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--8"></div>
+          <div class="flower__grass__overlay"></div>
+        </div>
+      </div>
+  
+      <div class="grow-ans" style="--d:2.4s">
+        <div class="flower__g-right flower__g-right--1">
+          <div class="leaf"></div>
+        </div>
+      </div>
+  
+      <div class="grow-ans" style="--d:2.8s">
+        <div class="flower__g-right flower__g-right--2">
+          <div class="leaf"></div>
+        </div>
+      </div>
+  
+      <div class="grow-ans" style="--d:2.8s">
+        <div class="flower__g-front">
+          <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--1">
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--2">
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--3">
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--4">
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--5">
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--6">
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--7">
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--8">
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div class="flower__g-front__line"></div>
+        </div>
+      </div>
+  
+      <div class="grow-ans" style="--d:3.2s">
+        <div class="flower__g-fr">
+          <div class="leaf"></div>
+          <div class="flower__g-fr__leaf flower__g-fr__leaf--1"></div>
+          <div class="flower__g-fr__leaf flower__g-fr__leaf--2"></div>
+          <div class="flower__g-fr__leaf flower__g-fr__leaf--3"></div>
+          <div class="flower__g-fr__leaf flower__g-fr__leaf--4"></div>
+          <div class="flower__g-fr__leaf flower__g-fr__leaf--5"></div>
+          <div class="flower__g-fr__leaf flower__g-fr__leaf--6"></div>
+          <div class="flower__g-fr__leaf flower__g-fr__leaf--7"></div>
+          <div class="flower__g-fr__leaf flower__g-fr__leaf--8"></div>
+        </div>
+      </div>
+  
+      <div class="long-g long-g--0">
+        <div class="grow-ans" style="--d:3s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d:2.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.4s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+  
+      <div class="long-g long-g--1">
+        <div class="grow-ans" style="--d:3.6s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.8s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d:4s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.2s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+  
+      <div class="long-g long-g--2">
+        <div class="grow-ans" style="--d:4s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.4s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+  
+      <div class="long-g long-g--3">
+        <div class="grow-ans" style="--d:4s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d:3s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+  
+      <div class="long-g long-g--4">
+        <div class="grow-ans" style="--d:4s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d:3s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+  
+      <div class="long-g long-g--5">
+        <div class="grow-ans" style="--d:4s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d:3s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+  
+      <div class="long-g long-g--6">
+        <div class="grow-ans" style="--d:4.2s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.4s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.6s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.8s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+  
+      <div class="long-g long-g--7">
+        <div class="grow-ans" style="--d:3s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.5s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <div class="love-container" id="carta">
+      <div class="love-box">
+        <button class="close-btn" onclick="closeBox()">✕</button>
+        <span class="heart-bottom-fixed">❤</span>
+        <h2 class="love-title">Para el amor de mi vida</h2>
+        <p>Hola amor,</p>
+          <p>Sabes que no soy mucho de escribir cartas ni de expresar todo lo que siento con palabras, pero contigo siento la necesidad de intentarlo, porque me encanta hacerte feliz y darte todo lo que mereces.</p>
+
+          <p>Eres una persona única y encantadora. Desde la primera vez que escuché tu voz sentí algo diferente, una sensación nueva para mí. Algo dentro de mí me decía que quería conocerte más, pasar tiempo contigo, estar a tu lado y convertirme en alguien en quien puedas apoyarte siempre. Desde ese momento supe que quería ser mi mejor versión para ti.</p>
+
+          <p>Eso es lo que intento cada día: mejorar, aprender y moldear mi forma de ser para poder estar a la altura de alguien tan especial como tú, aunque sé que mereces eso y muchísimo más.</p>
+
+          <p>La primera vez que nos vimos fue uno de los momentos más importantes de mi vida. Nunca olvidaré ese instante. Eres mi primer amor, y en mi corazón también deseo que seas el último. Aunque nuestra relación sea a distancia, nunca lo he visto como un obstáculo. Para mí es simplemente otra prueba que estamos dispuestos a superar juntos.</p>
+
+          <p>Si hay algo que admiro profundamente de ti es lo mucho que luchas por nosotros. Puede parecer algo sencillo desde fuera, pero yo sé que no lo es. Por eso lo valoro tanto. Me hace sentir increíblemente afortunado de que el destino haya querido que nuestras vidas se cruzaran.</p>
+
+          <p>Sé que a veces cometemos errores, los dos, porque nadie es perfecto. Pero lo verdaderamente importante es que siempre encontramos la forma de seguir adelante juntos, con ganas de mejorar y de cuidar lo que tenemos. Y para mí, eso vale más que cualquier cosa en el mundo.</p>
+
+          <p>Te amo muchísimo. Tu sonrisa y esa risa tan tuya, tan descontrolada y tan bonita, son de las cosas más especiales que existen para mí. Podría pasar horas mirándote reír sin cansarme nunca.</p>
+
+          <p>Quizá no sabes exactamente cómo te veo a través de mis ojos, pero voy a intentar explicarlo. Te veo como una persona preciosa, alguien a quien quiero cuidar, proteger y mimar. Cada día intento comprenderte mejor, aprender de ti y crecer contigo. Nunca me cansaré de luchar por encontrar la paz, la felicidad y el amor en nuestra relación.</p>
+
+          <p>Hay momentos que guardo en mi corazón de una manera muy especial. Por ejemplo, el día del concierto. Recuerdo lo ilusionada que estabas, cómo se te notaba desde antes incluso de llegar. Me encantó vivir contigo esa emoción, esos nervios por llegar a tiempo y que todo saliera bien. Ver esa parte de ti fue algo precioso.</p>
+
+          <p>Y luego, durante el concierto ese momento tenso por ver a tu artista favorito y la felicidad que se te dió en ese mismo instante fue el mayor regalo que me puede dar una persona.</p>
+
+          <p>También pienso mucho en aquel picnic tan especial que compartimos, en nuestros momentos íntimos, en todas esas noches de llamadas en las que nos quedábamos hablando durante horas, conociéndonos poco a poco, descubriendo cada parte del otro.</p>
+
+          <p>Todos esos recuerdos son pequeños tesoros para mí, y lo más bonito de todo es que sé que aún nos quedan muchísimos más por vivir.</p>
+
+          <p>Por eso hoy, en nuestro aniversario, quiero darte estos regalos con todo mi corazón. Para mí este día es incluso más especial que mi propio cumpleaños.</p>
+
+          <p>Una cosa que admiro muchísimo es tu forma de ser, a pesar de los obstáculos que te ha puesto la vida en sí, no has dejado de ser la maravillosa persona que eres hoy en día.</p>
+          <p>Tienes unos valores espléndidos aunque yo tenga una inseguridad que otra que se ha dado con el tiempo, no has menospreciado en absoluto, ni mirado por encima del hombro has sabido actuar de una forma correcta, aprecio mucho eso.</p>
+
+          <p>Y si algo tengo claro es que, después de todo lo que hemos vivido y de todo lo que siento por ti, volvería a elegirte una y mil veces más. Porque desde que llegaste a mi vida todo tiene más sentido, más luz y más felicidad.</p>
+
+          <p>Gracias por cada momento, por cada sonrisa y por cada recuerdo que estamos construyendo juntos. Y gracias, sobre todo, por ser exactamente la persona que eres.</p>
+          <p class="love-ending">Te amo.</p>
+      </div>
+    </div>
+    <div class="love-container" id="spotify">
+      <div class="love-box">
+        <button class="close-btn" onclick="closeBox()">✕</button>
+        <h2>Nuestra música 🎵</h2>
+        <div class="spotify-box">
+          <iframe
+          src="https://open.spotify.com/embed/playlist/35xFOfRJtKYdZE6BDMiJdu?utm_source=generator&theme=0"
+          width="100%"
+          height="400"
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy">
+          </iframe>
+        </div>
+     </div>
+    </div>
+
+
+      <div class="love-container" id="fotos">
+
+        <div class="love-box">
+        <button class="close-btn" onclick="closeBox()">✕</button>
+
+          <div class="galeria">
+
+            <h2 class="titulo-galeria">📷</h2>
+
+          <div class="slider">
+
+            <button class="flecha izquierda" onclick="cambiarFoto(-1)">❮</button>
+
+            <div class="contenido">
+              <img id="foto" src="img/picnic.jpg">
+
+              <p id="texto">
+              Este día te abriste conmigo, pudiste llorar y expresarte como necesitabas, y yo pude estar ahí para ti. Me pareció algo muy bonito y especial, me hizo sentir cerca de ti.
+              </p>
+            </div>
+
+            <button class="flecha derecha" onclick="cambiarFoto(1)">❯</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="love-container" id="tiempo">
+
+        <div class="love-box tiempo-box">
+        <button class="close-btn" onclick="closeBox()">✕</button>
+
+        <h2>Nuestro tiempo juntos</h2>
+
+        <div class="calendar-container">
+
+          <div class="calendar-page">
+            <span id="years">0</span>
+            <p>Años</p>
+          </div>
+
+          <div class="calendar-page">
+            <span id="months">0</span>
+            <p>Meses</p>
+          </div>
+
+          <div class="calendar-page">
+            <span id="days">0</span>
+            <p>Días</p>
+          </div>
+
+          <div class="calendar-page">
+            <span id="hours">0</span>
+            <p>Horas</p>
+          </div>
+
+          <div class="calendar-page">
+            <span id="minutes">0</span>
+            <p>Min</p>
+          </div>
+
+          <div class="calendar-page">
+            <span id="seconds">0</span>
+            <p>Seg</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
